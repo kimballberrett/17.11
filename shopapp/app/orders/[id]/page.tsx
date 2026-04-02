@@ -19,7 +19,6 @@ export default async function OrderDetailPage({
     .from("orders")
     .select("*, customers(full_name), shipments(shipment_id, carrier, shipping_method, ship_datetime, late_delivery)")
     .eq("order_id", Number(id))
-    .eq("customer_id", Number(customerId))
     .single();
 
   if (!order) notFound();
