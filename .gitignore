@@ -1,0 +1,9 @@
+.DS_Store
+*.pyc
+__pycache__/
+.mcp.json
+csv_exports/
+scripts/
+Textbook_Chapters/
+warehouse.db
+shop.db
